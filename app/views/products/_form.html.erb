@@ -13,15 +13,15 @@
 
   <div class="field">
     <%= f.label :company_id %><br>
-    <%= f.select :company_id, options_from_collection_for_select(Company.all, :id, :name), :include_blank => true %>
+    <%= f.select :company_id, options_from_collection_for_select(Company.all, :id, :name, :selected => @product.company_id), :include_blank => true %>
   </div>
   <div class="field">
     <%= f.label :type_id %><br>
-    <%= f.select :type_id, options_from_collection_for_select(Type.all, :id, :name), :include_blank => true %>
+    <%= f.select :type_id, options_from_collection_for_select(Type.all, :id, :name, :selected => @product.type_id), :include_blank => true %>
   </div>
   <div class="field">
     <%= f.label :store_id %><br>
-    <%= f.select :store_id, options_from_collection_for_select(Store.all, :id, :name), :include_blank => true %>
+    <%= f.select :store_id, options_from_collection_for_select(Store.all, :id, :name, :selected => @product.store_id), :include_blank => true %>
   </div>
   <div class="field">
     <%= f.label :price %><br>
