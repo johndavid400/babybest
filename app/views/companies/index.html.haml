@@ -1,9 +1,0 @@
-%h1 Companies
-
-.pull-right= link_to "New Company", new_company_path, :class => "button secondary"
-
-- @companies.each do |company|
-  .row
-    .large-12.columns
-      = link_to company.name, company_path(company), :class => "button expand"
-

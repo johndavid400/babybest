@@ -8,9 +8,9 @@
         - @product.errors.full_messages.each do |msg|
           %li= msg
   .field
-    = f.label :company_id
+    = f.label :brand_id
     %br/
-    = f.select :company_id, options_from_collection_for_select(Company.all, :id, :name, :selected => @product.company_id), :include_blank => true
+    = f.select :brand_id, options_from_collection_for_select(Brand.all, :id, :name, :selected => @product.brand_id), :include_blank => true
   .field
     = f.label :type_id
     %br/

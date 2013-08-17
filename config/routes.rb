@@ -7,7 +7,7 @@ Babybest::Application.routes.draw do
   root 'companies#index'
 
   resources :products
-  resources :companies
+  resources :brands
   resources :stores
   resources :types
 

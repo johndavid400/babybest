@@ -1,8 +1,8 @@
-%h1= @company.name
+%h1= @brand.name
 
 .pull-right= link_to "New Product", new_product_path, :class => "button secondary"
 
 .row
   .large-12.columns
-    - @company.products.each do |product|
+    - @brand.products.each do |product|
       = link_to product.name, product_path(product), :class => "button expand"

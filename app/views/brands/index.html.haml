@@ -1,0 +1,9 @@
+%h1 Brands
+
+.pull-right= link_to "New Brand", new_brand_path, :class => "button secondary"
+
+- @brands.each do |brand|
+  .row
+    .large-12.columns
+      = link_to brand.name, brand_path(brand), :class => "button expand"
+
