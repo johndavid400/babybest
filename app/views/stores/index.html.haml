@@ -1,0 +1,9 @@
+%h1 Stores
+
+.pull-right= link_to "New Store", new_store_path, :class => "button secondary"
+
+- @stores.each do |store|
+  .row
+    .large-12.columns
+      = link_to store.name, store_path(store), :class => "button expand"
+

@@ -1,0 +1,9 @@
+%h1 Product Types
+
+.pull-right= link_to "New Type", new_type_path, :class => "button secondary"
+
+- @types.each do |type|
+  .row
+    .large-12.columns
+      = link_to type.name, type_path(type), :class => "button expand"
+
