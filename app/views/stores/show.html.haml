@@ -1,0 +1,11 @@
+%p#notice= notice
+
+%h3= @store.name
+
+.pull-right= link_to 'Edit Store', edit_store_path(@store), :class => "button secondary"
+
+%hr
+
+- @store.products.each do |product|
+  = link_to product.name, product_path(product), :class => "button expand"
+

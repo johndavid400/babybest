@@ -5,4 +5,4 @@
 .row
   .large-12.columns
     - @company.products.each do |product|
-      = link_to product.name, product_path, :class => "button expand"
+      = link_to product.name, product_path(product), :class => "button expand"

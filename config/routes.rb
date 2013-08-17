@@ -1,7 +1,4 @@
 Babybest::Application.routes.draw do
-  resources :stores
-
-  resources :types
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -11,6 +8,8 @@ Babybest::Application.routes.draw do
 
   resources :products
   resources :companies
+  resources :stores
+  resources :types
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
