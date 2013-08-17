@@ -2,6 +2,8 @@
 
 .pull-right= link_to "New Product", new_product_path, :class => "button secondary"
 
+%hr
+
 - Type.all.each do |type|
   .row
     .large-12.columns

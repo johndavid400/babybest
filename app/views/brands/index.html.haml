@@ -1,6 +1,8 @@
-%h1 Brands
+%h3 Brands
 
 .pull-right= link_to "New Brand", new_brand_path, :class => "button secondary"
+
+%hr
 
 - @brands.each do |brand|
   .row
