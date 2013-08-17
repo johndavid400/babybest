@@ -19,13 +19,21 @@
     = f.label :store_id
     %br/
     = f.select :store_id, options_from_collection_for_select(Store.all, :id, :name, :selected => @product.store_id), :include_blank => true
-  .field
-    = f.label :price
-    %br/
-    = f.text_field :price
-  .field
-    = f.label :quantity
-    %br/
-    = f.number_field :quantity
+  .row
+    .large-4.columns
+      .field
+        = f.label :price
+        %br/
+        = f.text_field :price
+    .large-4.columns
+      .field
+        = f.label :quantity
+        %br/
+        = f.number_field :quantity
+    .large-4.columns
+      .field
+        = f.label :size
+        %br/
+        = f.text_field :size
   .actions
     = f.submit "Submit", :class => "button"

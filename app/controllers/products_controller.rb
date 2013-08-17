@@ -52,6 +52,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:brand_id, :type_id, :store_id, :size, :price, :quantity)
+      params.require(:product).permit(:brand_id, :type_id, :store_id, :size, :price, :quantity, :size)
     end
 end
