@@ -9,6 +9,8 @@
   %li.bullet-item= link_to @product.brand.name, brand_path(@product.brand)
   %li.bullet-item= link_to @product.type.name, type_path(@product.type)
   %li.bullet-item= link_to @product.store.name, store_path(@product.store)
+  - if @product.description
+    %li.bullet-item= @product.description.humanize
   - if @product.size
     %li.bullet-item= "Size: #{@product.size}"
   %li.bullet-item= "Qty: #{@product.quantity}"
